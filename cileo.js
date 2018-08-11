@@ -242,7 +242,7 @@ function isYoutube(str) {
 
 
 client.on('ready', () => {
-     client.user.setActivity("Music,🎶❤ ",{type: 'WATCHING'})
+     client.user.setActivity("Cilęo, Server. ",{type: 'WATCHING'})
 
 });
 
