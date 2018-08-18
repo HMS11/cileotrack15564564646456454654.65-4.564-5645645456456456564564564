@@ -101,7 +101,8 @@ client.on('message', function(message) {
                     message.channel.sendEmbed(play_info)
                message.channel.send(`
                          **Playing :notes:**  **${videoInfo.title}**`)
-                    client.user.setGame(videoInfo.title,'https://www.twitch.tv/Abdulmohsen');
+                     client.user.setActivity("videoInfo.title, ",{type: 'LISTENING'})
+                    ///client.user.setGame(videoInfo.title,'https://www.twitch.tv/Abdulmohsen');
                 });
             });
         }
@@ -242,7 +243,7 @@ function isYoutube(str) {
 
 
 client.on('ready', () => {
-     client.user.setActivity("Cilęo, Server. ",{type: 'WATCHING'})
+     client.user.setActivity("1help , GamerStation.",{type: 'LISTENING'})
 
 });
 
@@ -250,7 +251,7 @@ client.on('ready', () => {
 
 
 
-const developers = ["459300517999411218","",""]
+const developers = ["459300517999411218","284466552668160010",""]
 const adminprefix = "1";
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
